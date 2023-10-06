@@ -56,7 +56,7 @@ object CurryingPAFs {
   // 2 - process a list of numbers and return their String representations under different formats
   // step 1: create a curried formatting method with a formatting string and a value
   // step 2: process a list of numbers with various formats
-  private val piWith2Dec = "%4.6f".formatted(Math.PI)
+  private val piWith2Dec = "%4.6f".format(Math.PI)
 
   private def formatter(fmt: String)(number: Double): String =
     fmt.format(number)
